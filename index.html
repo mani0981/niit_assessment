@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <style>
+        .movie-thumb img{ height: 369px; width: 360px;}
+    
+        .col-sm-6 .movie-thumb img{ height: 369px; width: 555px;}
+        
+        .image-overlay{position: absolute; height: 369px; width: 360px; background-color: rgba(0, 0, 0, 0.5); color: white; top: 0px; text-align: center; vertical-align: middle; padding: 20% 20px;}
+       
+    </style>
+    
+  <body>
+      
+      <div class="container">
+            
+          <div class="row">
+          
+               <div class="col-sm-4 movie-wrapper">
+                       <div  class="movie-thumb" onmouseover="showdsc(event)" onmouseout="hidedsc(event)">
+                           <img  src="http://t2.gstatic.com/images?q=tbn:ANd9GcQlZ4YZ7wNla7O6kQQQ83OAcEDsv1_S1a_euSbenWr_FpkJW_6D"  >
+                         <div  class="image-overlay" style="display:none" >Kaira is a budding cinematographer in search of a perfect life. Her encounter with Jug, an unconventional thinker, helps her gain a new perspective on life. She discovers that happiness is all about finding comfort in life's imperfections.</div>
+                       </div>
+                   <div class="movie-details">
+                       <h4>Dear Zindagi</h4>
+							
+						</div>
+              </div>
+          
+                  <div class="col-sm-4 movie-wrapper">
+                       <div  class="movie-thumb" onmouseover="showdsc(event)" onmouseout="hidedsc(event)">
+                           <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcS1cK4t_uWmqHaRYD9uq69hLEWy7f7NpIfjPlQECdooplpkQcEp"  >
+                         <div  class="image-overlay" style="display:none">A romantic action drama based on the life of fictional Haryana based wrestler & mixed martial arts specialist Sultan Ali Khan.</div>
+                       </div>
+                   <div class="movie-details">
+                       <h4>Sultan</h4>
+							
+						</div>
+              </div>
+          
+                  <div class="col-sm-4 movie-wrapper">
+                       <div  class="movie-thumb" onmouseover="showdsc(event)" onmouseout="hidedsc(event)">
+                           <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcQSSaD2bSPOgmgsn4-09dF2l8mHbuvHhJxbkL7rvD1uEpAxKnLX"  >
+                         <div  class="image-overlay" style="display:none " >A stranger in the city asks questions no one has asked before. Known only by his initials, P.K.'s innocent questions and childlike curiosity will take him on a journey of love, laughter and letting go.</div>
+                       </div>
+                   <div class="movie-details">
+                       <h4>PK</h4>
+							
+						</div>
+              </div>
+          
+          </div>
+          
+          <div class="row">
+          
+               <div class="col-sm-6 movie-wrapper">
+                   <h1>Now Showing</h1>
+                       <div  class="movie-thumb">
+                           <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ4MzQzMzM2Nl5BMl5BanBnXkFtZTgwMTQ1NzU3MDI@._V1_SX300.jpg"  >
+                         
+                       </div>
+                   
+              </div>
+          
+                  <div class="col-sm-6 movie-wrapper">
+                      <h1>New Release </h1>
+                       <div  class="movie-thumb">
+                           <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcS1cK4t_uWmqHaRYD9uq69hLEWy7f7NpIfjPlQECdooplpkQcEp"  >
+                        
+                       </div>
+                   
+              </div>
+          
+          
+          </div>
+      </div>
+    
+
+	
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+      <script>
+          
+        
+          function showdsc(event)
+          {
+              
+              event.currentTarget.children[1].style.display="block"
+          }
+          
+            function hidedsc(event)
+          {
+              
+              event.currentTarget.children[1].style.display="none  "
+          }
+          
+          
+          
+   
+        
+    
+    </script>
+  </body>
+</html>
